@@ -1,0 +1,48 @@
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="footer">
+    <div class="container">
+        <div class="left-section">
+            <a class="logo" href="/"><img loading="lazy" decoding="async" src="/assets/images/Pine-tree.png" alt="logo" width="100%" height="100%"></a>
+            <h2>State of California Brokerage Licences:</h2>
+            <p>{{ details.brokers[0].name }}: DRE# {{ details.brokers[0].DRE }} | NMLS # {{ details.brokers[0].NMLS }}</P>
+            <p>{{ details.brokers[1].name }}: DRE# {{ details.brokers[1].DRE }} | NMLS# {{ details.brokers[1].NMLS }}</P>
+        </div>
+        <div class="right-section">
+            <div class="lists">
+                <ul>
+                    <li>
+                        <h2>Information</h2>
+                    </li>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about">About Us</a>
+                    </li>
+                    <li>
+                        <a href="/contact">Contact</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>Contact</h2>
+                    </li>
+                    <li>
+                        <a href="/about">T: {{ client.phoneFormatted }}</a>
+                    </li>
+                    <li>
+                        <a href="/about">{{ client.email }}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="credit">
+        <a href="" target="_blank" rel="noopener">{{ client.name }}</a>
+        <span class="copyright"> Copyright 2023 - Present</span>
+    </div>
+</footer>

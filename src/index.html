@@ -1,0 +1,155 @@
+---
+layout: 'base.html'
+description: 'Meta description for the page'
+metaTitle: 'Pine Tree Lenders, LTD'
+tagTitle: 'Pine Tree Website'
+preloadImg: '/images/landing-1920w.webp'
+preloadCSS: '/css/local.css'
+permalink: '/'
+eleventyNavigation:
+  key: Home
+  order: 100
+---
+<!-- Enter html code below -->
+
+
+<section id="hero">
+  <div class="cs-container">
+    <div class="cs-flex-group">
+      <span class="cs-topper">Pine Tree Lenders</span>
+      <h1 class="cs-title">Hard Money Loans</h1>
+      <p class="cs-text">
+        Helping you break into Real Estate Investing
+      </p>
+      <a href="/contact" class="cs-button-solid">Invest with Pine Tree</a>
+      <a href="/contact" class="cs-button-transparent">
+        Apply for a Loan
+      </a>
+    </div>
+  </div>
+
+  <!-- Background Image -->
+  {% image './src/images/landing.jpg', 'mountains', 'cs-picture', 'eager', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+</section>
+
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services" class="services">
+  <h1 class="services-title">Three Steps to Invest</h1>
+  <!-- Get Icons From flaticon.com -->
+  <div class="cards">
+    <div class="card">
+      <picture>
+        <img
+          aria-hidden="true"
+          decoding="async"
+          src="/assets/svgs/service1.svg"
+          alt="appliance"
+          width="48"
+          height="48"
+  />
+      </picture>
+      <h2>Join our Investors Group</h2>
+      <p>Join our Investors Group to receive exclusive updates about properties available for hard money loans. By letting us know your intended investment range, we can provide tailored opportunities that match your financial plans.</p>
+    </div>
+    <div class="card">
+      <picture>
+        <img
+          aria-hidden="true"
+          decoding="async"
+          src="/assets/svgs/service2.svg"
+          alt="appliance"
+          width="48"
+          height="48"
+  />
+      </picture>
+      <h2>Agree on Property to Fund</h2>
+      <p>Pine Tree Lenders will provide properties that have undergone rigorous verification by our expert brokers, ensuring these opportunities represent excellent deals for our clients.</p>
+    </div>
+    <div class="card">
+      <picture>
+        <img
+          aria-hidden="true"
+          decoding="async"
+          src="/assets/svgs/service3.svg"
+          alt="appliance"
+          width="48"
+          height="48"
+  />
+      </picture>
+      <h2>Collect Interest Payments</h2>
+      <p>After all contracts are signed and money is sent. Borrowers will send Monthly Interest payments directly to you</p>
+    </div>
+  </div>
+  
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-left">
+      {% image './src/images/cabinets2.jpg', 'house', 'cs-picture cs-picture1', 'lazy'%}
+      {% image './src/images/construction.jpg', 'house', 'cs-picture cs-picture2', 'lazy'%}
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <span class="cs-topper">What Are</span>
+      <h2 class="cs-title">Hard Money Loans</h2>
+      <p class="cs-text">
+        A hard money loan is a short-term, asset-based loan used primarily by real estate investors to finance property purchases or renovations. These loans differ from a mortgage, because the loan application is based mainly on property value rather than credit score. As a result, these loans will usually have higher interest rates. They are a good resource for those that need quick financing or who can not qualify for a traditional loan.  
+      </p>
+      <a href="#sbs-r" class="button-solid">More About Investing in Hard Money Loans</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--            Extra Content To Rank             -->
+<!-- ============================================ -->
+
+<section id="sbs-r">
+  <div class="cs-container" id="pros">
+    <!-- Left Image Section -->
+    <div class="cs-left">
+      {% image './src/images/construction.jpg', 'house', 'cs-picture cs-picture1', 'lazy'%}
+      {% image './src/images/cabinets2.jpg', 'house', 'cs-picture cs-picture2', 'lazy'%}
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <h2 class="cs-title">Pros of Investing in Hard Money Loans</h2>
+      <div class="cs-text">
+        <ul>
+          <li><span>High returns:</span> Hard money loans usually have higher returns than stocks, bonds, and mutual funds.</li>
+          <li><span>Short-term investment:</span> Hard money loans are usually short-term investments. Loan terms range from a few months to a few years. Investors will be able to quickly earn returns on their investment without locking up their money for a long period of time.</li>
+          <li><span>Collateralized investment:</span> Hard money loans are collateralized through the borrower’s property. If a borrower were to default on the loan, the investor can seize the property to recover their investments. As a result, the risk of losing your investment is lowered.</li>
+        </ul>
+      </div>
+      <a href="https://www.fortunebuilders.com/what-is-hard-money-lending/" class="button-solid">More About Hard Money Loans</a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Final Call to Action             -->
+<!-- ============================================ -->
+
+<section id="cta">
+  <div class="container">
+    <h2 class="title">
+      Become an Investment<br/>
+      Partner With Us Today
+    </h2>
+    <p>
+      Begin your Realestate Investment Journey
+    </p>
+    <a href="/contact" class="button-solid">Invest Now</a>
+  </div>
+  {% image './src/images/cabinets2.jpg', 'kitchen cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+</section>

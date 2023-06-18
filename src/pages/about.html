@@ -1,0 +1,88 @@
+---
+layout: 'base.html'
+description: "Meta description for the page"
+metaTitle: 'Title that shows up on google searches'
+tagTitle: 'About'
+preloadImg: '/images/cabinets2-1920w.webp'
+preloadCSS: '/css/about.css'
+permalink: 'about/'
+eleventyNavigation:
+    key: About Us
+    order: 200
+---
+
+<!-- Enter html code below -->
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+  <h1 id="home-h">About Us</h1>
+  {% image './src/images/cabinets2.jpg', 'cabinets', '', 'lazy', '(max-width: 850px) 850px, 1920px'%}
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-left">
+      {% image './src/images/cabinets2.jpg', 'cabinets', 'cs-picture cs-picture1', 'lazy'%}
+      {% image './src/images/construction.jpg', 'house', 'cs-picture cs-picture2', 'lazy'%}
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <span class="cs-topper">About Us</span>
+      <h2 class="cs-title">Pine Tree Lenders, LTD</h2>
+      <p class="cs-text">
+                Pine Tree Lenders, LTD. has been part of the California real estate investor community for over 5 years. We provide investor resources as well as private money lending specifically built for flippers, landlords, and builders. We look forward to funding your next real estate investment deal or providing you with valuable insights into California’s Central Valley ever-changing real estate market.
+            </p>
+      <a href="#profile-display" class="button-solid">More About Us</a>
+    </div>
+  </div>
+</section>
+
+<section id="profile-display">
+  <h1>Our Brokers</h1>
+  <div class="cs-container">
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <div class="profile">
+        <div class="profile-picture">{% image './src/images/tangee.jpg', 'lazy'%}</div>
+        <h3 >Tangee Pinheiro</h3>
+        <p class="profile-text">
+          Something about Helders experience in realestate + other stuff that lends credibility
+        </p>
+      </div>
+      <div class="profile">
+        <div class="profile-picture">{% image './src/images/Portrait1.jpg', 'lazy'%}</div>
+        <h3 >Helder Pinheiro</h3>
+        <p class="profile-text">
+          Something about Helders experience in realestate + other stuff that lends credibility
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================ -->
+<!--             Final Call to Action             -->
+<!-- ============================================ -->
+
+<section id="cta">
+  <div class="container">
+    <h2 class="title">
+      Become an Investment<br/>
+      Partner With Us Today
+    </h2>
+    <p>
+      Begin your Realestate Investment Journey
+    </p>
+    <a href="/contact" class="button-solid">Invest Now</a>
+  </div>
+  {% image './src/images/cabinets2.jpg', 'kitchen cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+</section>
