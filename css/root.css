@@ -564,13 +564,12 @@
     display: block;
   }
   #footer .left-section p {
-    font-size: 0.875rem;
+    font-size: min(3.5vw, 1.2em);
     line-height: 1.92857143;
     color: #fff;
     opacity: .9;
     text-align: center;
     width: 100%;
-    width: 21.92857143rem;
     margin: auto;
   }
   #footer .right-section {
