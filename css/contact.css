@@ -161,7 +161,7 @@
     border-radius: 0.5rem;
     /* cuts off corners on img tag */
     overflow: hidden;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
